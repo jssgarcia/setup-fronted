@@ -6,6 +6,8 @@ Estructura del README basada en el [setup](https://github.com/taniarascia/setup)
 
 ## Contenidos
 
+- [Config Library|Framework](#config)
+-
 - [Git](#git)
 
 - [Navegador](#navegador)
@@ -35,6 +37,14 @@ Estructura del README basada en el [setup](https://github.com/taniarascia/setup)
 - [Traducción](#traducción)
 
 - [Enlaces interesantes](#enlaces-interesantes)
+
+## Config
+
+### Configuracion de librerias Fronted
+
+- [Opciones de Eslint (json format)](https://gist.github.com/richardtallent/d4452bd0aa23020e999dd9410458df46)
+
+#### Vue
 
 ## Git
 
@@ -86,6 +96,7 @@ git checkout .
 ```
 
 ### Commit para subir ficheros del `staging area` al `git directory`
+
 ```
 git commit -m "Commit message"
 ```
@@ -125,6 +136,7 @@ git push origin "feature-branch" -f
 http://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html
 
 Ejemplo: Combinar los últimos 4 commits tuyos en el primer commit de la lista:
+
 ```
 git rebase -i HEAD~4
 
@@ -227,6 +239,7 @@ git tag -a 3.26.0 -m "Version 3.26.0”
 
 git push origin 3.26.0
 ```
+
 </details>
 
 ## Navegador
@@ -239,7 +252,7 @@ git push origin 3.26.0
 
 - Tip: Run copy(obj) in the Console to copy an object to your clipboard
 
-- Tip: Type $_ in the Console to return the value of the last evaluated expression.
+- Tip: Type \$\_ in the Console to return the value of the last evaluated expression.
 
 - Option + Cmd + J: Open Console JS.
 
@@ -262,6 +275,7 @@ git push origin 3.26.0
 ## Editor Texto
 
 ### **Uso:** [Visual Studio Code](http://code.visualstudio.com/)
+
 **Previamente usé:** [Atom](https://atom.io/) y [Brackets](http://brackets.io/).
 
 - [Abrir editor desde consola](https://code.visualstudio.com/docs/setup/mac).
@@ -296,16 +310,16 @@ git push origin 3.26.0
 
 - Ejecutar ESLint al guardar un fichero en VS Code: https://medium.com/@netczuk/even-faster-code-formatting-using-eslint-22b80d061461.
 
-  - Instalar extensión ESLint
+- Instalar extensión ESLint
 
-  - Habilitar autofix con [fix para Vue](https://www.paddingleft.com/2017/06/13/vscode-fix-eslint-autofix-in-vue/):
+- Habilitar autofix con [fix para Vue](https://www.paddingleft.com/2017/06/13/vscode-fix-eslint-autofix-in-vue/):
 
-    {
-      "eslint.autoFixOnSave": true,
-      "eslint.validate": [
-        { "language": "vue", "autoFix": true }
-      ]
-    }
+  {
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+  { "language": "vue", "autoFix": true }
+  ]
+  }
 
 ### Extensiones
 
@@ -359,7 +373,7 @@ Inicialmente he usado el terminal de Mac con el tema Homebrew. A partir de ahora
 
 - [Working effectively with iTerm2](http://teohm.com/blog/working-effectively-with-iterm2/)
 
-    - Profiles - Open Profiles - Edit Default Profile - Working Directory - "Reuse previous session’s directory".
+  - Profiles - Open Profiles - Edit Default Profile - Working Directory - "Reuse previous session’s directory".
 
 - [zsh para Windows 10](https://www.howtogeek.com/258518/how-to-use-zsh-or-another-shell-in-windows-10/), [oh my zsh](https://www.maketecheasier.com/install-zsh-and-oh-my-zsh-windows10/): Personaliza el prompt del terminal, por ejemplo te dice en qué rama de git estás.
 
@@ -367,7 +381,7 @@ Inicialmente he usado el terminal de Mac con el tema Homebrew. A partir de ahora
 
   - Instalar: apt-get install git
 
-  - Ejecutar: sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  - Ejecutar: sh -c "\$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
   - Lanzar: zsh
 
@@ -385,11 +399,11 @@ Inicialmente he usado el terminal de Mac con el tema Homebrew. A partir de ahora
 
     - chsh -s /usr/local/bin/zsh
 
-  - Volver a entrar en iTerm2 y cuando estás en un repositorio git te dice en qué rama estás por ejemplo git:(fix/max-digits-number-76).
+- Volver a entrar en iTerm2 y cuando estás en un repositorio git te dice en qué rama estás por ejemplo git:(fix/max-digits-number-76).
 
 ## Sistema Operativo
 
-### **Uso (trabajo):** [macOS (Apple)](https://es.wikipedia.org/wiki/OS_X_El_Capitan). **Uso (personal):**  [Windows 10](https://es.wikipedia.org/wiki/Windows_10)
+### **Uso (trabajo):** [macOS (Apple)](https://es.wikipedia.org/wiki/OS_X_El_Capitan). **Uso (personal):** [Windows 10](https://es.wikipedia.org/wiki/Windows_10)
 
 - Bloquear ordenador Mac: Ctrl + Command + Q
 
@@ -401,7 +415,7 @@ Cambios en Windows 10:
 
 - Instalar [Linux Bash Shell](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/) en Windows 10. Creados los proyectos en /mnt/c/Projects (C:/Projects).
 
-  - Nota [@ethomson](https://twitter.com/ethomson/status/910167854321987586/photo/1): Pro-tip: you don't have to use bash in Windows Subsystem for Linux.  If you run `wsl`, it will use your login shell, so you can use zsh!
+  - Nota [@ethomson](https://twitter.com/ethomson/status/910167854321987586/photo/1): Pro-tip: you don't have to use bash in Windows Subsystem for Linux. If you run `wsl`, it will use your login shell, so you can use zsh!
 
 ## Automatización
 
@@ -423,28 +437,29 @@ Para probar IE en un mac (ejemplo generando versión producción y con http-serv
 
 - Seguir pasos https://github.com/magnetikonline/linuxmicrosoftievirtualmachines#ie11---windows-7
 
-    mkdir -p ~/vm/ie11-windows7 && cd ~/vm/ie11-windows7
+  mkdir -p ~/vm/ie11-windows7 && cd ~/vm/ie11-windows7
 
-    wget -ci https://github.com/magnetikonline/linuxmicrosoftievirtualmachines/raw/master/vmarchiveset/ie11-windows7.txt
+  wget -ci https://github.com/magnetikonline/linuxmicrosoftievirtualmachines/raw/master/vmarchiveset/ie11-windows7.txt
 
-    cat IE11.Win7.For.Linux.VirtualBox.zip.00? >IE11.Win7.For.Linux.VirtualBox.zip
+  cat IE11.Win7.For.Linux.VirtualBox.zip.00? >IE11.Win7.For.Linux.VirtualBox.zip
 
-    rm ie11-windows7.txt IE11.Win7.For.Linux.VirtualBox.zip.00?
+  rm ie11-windows7.txt IE11.Win7.For.Linux.VirtualBox.zip.00?
 
-    unzip IE11.Win7.For.Linux.VirtualBox.zip
+  unzip IE11.Win7.For.Linux.VirtualBox.zip
 
-    rm IE11.Win7.For.Linux.VirtualBox.zip
+  rm IE11.Win7.For.Linux.VirtualBox.zip
 
 - En Virtual Box: Importar servicio virtualizado (desde ~/vm/ie11-windows7)
 
 - Instalar http-server: https://www.npmjs.com/package/http-server (la primera vez)
-    npm install http-server -g
+  npm install http-server -g
 
 - Generar versión salida
-    - npm run build
+
+  - npm run build
 
 - Ejecutar http-server (en dist está la versión de distribución en este caso):
-    http-server dist
+  http-server dist
 
 - Disponible en virtual box en http://ip-local:8080 (la ip local con ifconfig, te la especifica en la terminal el http-server)
 
@@ -492,44 +507,44 @@ Para probar IE en un mac (ejemplo generando versión producción y con http-serv
 
 ## Enlaces interesantes
 
-* Setup de trabajo:
+- Setup de trabajo:
 
-  * [Jorge Aznar](http://jorgeatgu.com/blog/mi-setup-de-trabajo/).
+  - [Jorge Aznar](http://jorgeatgu.com/blog/mi-setup-de-trabajo/).
 
-  * [Enlaces Bash y Gulp TheAntiEvent17](https://gist.github.com/jorgeatgu/6b1f9bdf8ae9b02ad69d2f7bd039aac9#automatización-con-gulp-y-bash).
+  - [Enlaces Bash y Gulp TheAntiEvent17](https://gist.github.com/jorgeatgu/6b1f9bdf8ae9b02ad69d2f7bd039aac9#automatización-con-gulp-y-bash).
 
-* Dot files:
+- Dot files:
 
-  * [Getting started](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789).
+  - [Getting started](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789).
 
-  * [Awesome dotfiles](https://github.com/webpro/awesome-dotfiles).
+  - [Awesome dotfiles](https://github.com/webpro/awesome-dotfiles).
 
-  * [Jorge Aznar](https://github.com/jorgeatgu/setup).
+  - [Jorge Aznar](https://github.com/jorgeatgu/setup).
 
-  * [Viroide](https://github.com/Viroide/dotfiles).
+  - [Viroide](https://github.com/Viroide/dotfiles).
 
-  * [Angel M Miguel](https://github.com/Angelmmiguel/dotfiles).
+  - [Angel M Miguel](https://github.com/Angelmmiguel/dotfiles).
 
-  * [Joan León](https://github.com/nucliweb/my-terminal).
+  - [Joan León](https://github.com/nucliweb/my-terminal).
 
-* Gulp:
+- Gulp:
 
-  * [Jon Torrado](https://medium.com/@jontorrado/working-with-gulp-2-19376bfdd077).
+  - [Jon Torrado](https://medium.com/@jontorrado/working-with-gulp-2-19376bfdd077).
 
-* Inicio proyectos:
+- Inicio proyectos:
 
-  * [Jorge Aznar (artículo)](http://jorgeatgu.com/blog/iniciando-proyectos-con-base/).
+  - [Jorge Aznar (artículo)](http://jorgeatgu.com/blog/iniciando-proyectos-con-base/).
 
-  * [Jorge Aznar (GitHub)](https://github.com/jorgeatgu/base).
+  - [Jorge Aznar (GitHub)](https://github.com/jorgeatgu/base).
 
-  * [Generador Jorge Aznar creado por Viroide](https://github.com/Viroide/generator-jorge-atgu). [Artículo Medium](https://medium.com/@viroide/un-peque%C3%B1o-regalo-para-jorge-aznar-38c558e57e95).
+  - [Generador Jorge Aznar creado por Viroide](https://github.com/Viroide/generator-jorge-atgu). [Artículo Medium](https://medium.com/@viroide/un-peque%C3%B1o-regalo-para-jorge-aznar-38c558e57e95).
 
-* Configurar el terminal:
+- Configurar el terminal:
 
-  * [Carlos Azaustre (HyperTerm)](https://youtu.be/2w-e_0W0Y78).
+  - [Carlos Azaustre (HyperTerm)](https://youtu.be/2w-e_0W0Y78).
 
-* Vim Sessions:
+- Vim Sessions:
 
-  * [Julia Evans](https://twitter.com/b0rk/status/906739364985806848).
+  - [Julia Evans](https://twitter.com/b0rk/status/906739364985806848).
 
-  * [Handle vim sessions](https://github.com/dhruvasagar/vim-prosession).
+  - [Handle vim sessions](https://github.com/dhruvasagar/vim-prosession).
