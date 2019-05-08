@@ -44,7 +44,11 @@ Estructura del README basada en el [setup](https://github.com/taniarascia/setup)
 
 - [Opciones de Eslint (json format)](https://gist.github.com/richardtallent/d4452bd0aa23020e999dd9410458df46)
 
-#### Vue
+## Firebase
+
+### Multi-hosting by Project.
+
+- [Host multiple Apps or Websites on Firebase](https://pamartinezandres.com/lessons-learnt-the-hard-way-using-firebase-realtime-database-c609b52b9afb)
 
 ## Git
 
